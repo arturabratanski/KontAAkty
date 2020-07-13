@@ -1,0 +1,40 @@
+<!--
+Developed by Artur Abratanski
+based on course: https://www.udemy.com/course/java-the-complete-java-developer-course/
+ended with certificate: https://www.udemy.com/certificate/UC-0ec63629-2fb7-4a2f-96d5-d58a3eb79e1a/
+-->
+
+<!--
+This layout is responsible for main window of application.
+It contains table with data and other controllers. To provide acceptable UX SceneBuilder was used for verification.
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainBorderPane" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arturabratanski.contact.Controller">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER"> <!-- menu bar with tools for data management -->
+        <menus>
+          <Menu mnemonicParsing="false" text="Kontakty...">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#showNewContactDialog" text="Dodaj" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleDeleteButton" text="Usuń" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Wyjdź" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <TableView fx:id="contactTableView" onKeyPressed="#handleKeyPressed" style="-fx-border-color: blue;" BorderPane.alignment="CENTER"> <!-- main table for contacts display -->
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="150.0" text="Imię" />
+          <TableColumn fx:id="surnameColumn" prefWidth="150.0" text="Nazwisko" />
+          <TableColumn fx:id="phoneNumberColumn" prefWidth="200.0" text="Numer telefonu" />
+          <TableColumn fx:id="notesColumn" prefWidth="400.0" text="Notatki" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>

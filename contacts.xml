@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+<contact>
+	<first_name>Artur</first_name>
+	<last_name>Abratanski</last_name>
+	<phone_number>517361645</phone_number>
+	<notes>Inżynier, specjalista komputerowych metod projektowania oraz napędów lotniczych, kosmonautyki z doświadczeniem w wiodącej firmie branży lotniczej. Od wielu lat zainteresowany programowaniem z Javą jako główną technologią.</notes>
+</contact>
+<contact>
+	<first_name>Richard</first_name>
+	<last_name>Canto</last_name>
+	<phone_number>207-353-7982</phone_number>
+	<notes>Random user 1
+Company: Just For Fun</notes>
+</contact>
+<contact>
+	<first_name>Cecile</first_name>
+	<last_name>Laird</last_name>
+	<phone_number>503-404-0127</phone_number>
+	<notes>Random user 2
+Company: Witmark</notes>
+</contact>
+<contact>
+	<first_name>Juliet</first_name>
+	<last_name>Robinson</last_name>
+	<phone_number>248-827-4913</phone_number>
+	<notes>Random user 3
+Company: Gottschalks</notes>
+</contact>
+<contact>
+	<first_name>Jarosław</first_name>
+	<last_name>Nowak</last_name>
+	<phone_number>414-858-4889</phone_number>
+	<notes>Random user 4
+Company: Museum Company</notes>
+</contact>
+</contacts>

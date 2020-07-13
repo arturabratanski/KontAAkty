@@ -1,0 +1,39 @@
+<!--
+Developed by Artur Abratanski
+based on course: https://www.udemy.com/course/java-the-complete-java-developer-course/
+ended with certificate: https://www.udemy.com/certificate/UC-0ec63629-2fb7-4a2f-96d5-d58a3eb79e1a/
+-->
+
+<!--
+This layout is responsible for dialog window in which user can create contact.
+It binds data based on JavaFX id.
+-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.arturabratanski.contact.DialogController">
+    <content>
+        <GridPane hgap="10.0" vgap="10.0"> <!-- GridPane within DialogPane -->
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+         <children> <!-- form which gather all required data, contains labels and text fields -->
+            <Label text="Imię" />
+            <TextField fx:id="name" GridPane.columnIndex="1" />
+            <Label text="Nazwisko" GridPane.rowIndex="1" />
+            <Label text="Numer telefonu" GridPane.rowIndex="2" />
+            <Label text="Notatki" GridPane.rowIndex="3" />
+            <TextField fx:id="surname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="phoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextArea fx:id="notes" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children></GridPane>
+    </content>
+</DialogPane>
